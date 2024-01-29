@@ -6,7 +6,7 @@ const Sidebar = () => {
 
 	return (
 		// sidebar with great styles
-		<div className='w-[150px] h-full  bg-[#383839] '>
+		<div className='w-[150px] h-full  bg-[#202020] '>
 			<ul className='flex flex-col gap-4 mt-2'>
 				{sidebarItems.map((item) => {
 					return (

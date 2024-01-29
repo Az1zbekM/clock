@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return (
-		<nav className='h-[80px] w-full bg-[#383839] fixed'>
+		<nav className='h-[10%] w-full bg-[#202020] fixed'>
 			<div className=' h-full w-full flex justify-between'>
 				<nav className='w-[50%] h-full flex justify-start items-center '>
 					<NavLink to={'/'}>
@@ -24,7 +24,7 @@ const Navbar = () => {
 						<div>
 							<button
 								type='button'
-								className='border-[3px] border-gray-700 font-bold inline-flex w-full justify-center rounded-md bg-black px-4 py-2 text-sm text-gray-700 hover:bg-black'
+								className='border-[3px] border-white font-bold inline-flex w-full justify-center rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-black'
 								id='menu-button'
 								aria-expanded='true'
 								aria-haspopup='true'
@@ -37,7 +37,7 @@ const Navbar = () => {
 						{showMenu && (
 							<div className='absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu show border border-gray-800'>
 								<div
-									className='py-1 bg-black border border-gray-800'
+									className='py-1 bg-black border border-gray-800 text-white'
 									role='menu'
 									aria-orientation='vertical'
 									aria-labelledby='menu-button'
@@ -46,7 +46,7 @@ const Navbar = () => {
 									{/* navlinks : Stopwatch, Timer and Settings */}
 									<NavLink
 										to={'/stopwatch'}
-										className='mx-5 block px-4 py-2 text-sm text-gray-700'
+										className='mx-5 block px-4 py-2 text-sm '
 									>
 										<p className=''>Stopwatch</p>
 										<hr className='mt-2 w-[53%]' />
@@ -54,7 +54,7 @@ const Navbar = () => {
 
 									<NavLink
 										to={'/timer'}
-										className='mx-5 block px-4 py-2 text-sm text-gray-700'
+										className='mx-5 block px-4 py-2 text-sm '
 									>
 										<p className=''>Timer</p>
 										<hr className='mt-2 w-[30%]' />
@@ -62,7 +62,7 @@ const Navbar = () => {
 
 									<NavLink
 										to={'/'}
-										className='mx-5 block px-4 py-2 text-sm text-gray-700'
+										className='mx-5 block px-4 py-2 text-sm'
 									>
 										<p className=''>Settings</p>
 										<hr className='mt-2 w-[40%]' />
