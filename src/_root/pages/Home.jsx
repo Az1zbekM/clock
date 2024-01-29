@@ -104,8 +104,8 @@ const Home = () => {
 					<>
 						{/* hr that will be shown when there are lapped times */}
 						<hr className='w-[80%] border-[1.5px] border-[#393939]' />
-						<div className='w-full flex gap-4 justify-center items-center text-[#404040]'>
-							<span>Laps {lapTimes.length}</span> and <span>Milliseconds: {timer}</span>
+						<div className='w-full flex gap-4 justify-center items-center text-black font-bold'>
+							<span>Laps {lapTimes.length}</span>
 						</div>
 					</>
 				)}
