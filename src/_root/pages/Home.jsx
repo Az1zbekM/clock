@@ -4,7 +4,7 @@ const Home = () => {
 	const timeInterval = React.useRef(null)
 	const [timer, setTimer] = useState(0)
 	const [isRunning, setIsRunning] = useState(false)
-  const [lapTimes, setLapTimes] = useState([])
+	const [lapTimes, setLapTimes] = useState([])
 
 	const handleStart = () => {
 		if (isRunning) return
@@ -20,19 +20,16 @@ const Home = () => {
 		clearInterval(timeInterval.current)
 	}
 
-
 	const handleReset = () => {
 		setIsRunning(false)
 		clearInterval(timeInterval.current)
 		setTimer(0)
-    setLapTimes([])
+		setLapTimes([])
 	}
-  //   function to handle lap
-   const handleLap = () => {
-			setLapTimes(prevLapTimes => [...prevLapTimes, timer])
-		}
-
-
+	//   function to handle lap
+	const handleLap = () => {
+		setLapTimes(prevLapTimes => [...prevLapTimes, timer])
+	}
 
 	const formatTime = timer => {
 		const minutes = Math.floor(timer / 60000)
